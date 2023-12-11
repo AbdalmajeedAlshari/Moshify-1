@@ -9,13 +9,11 @@
   --border-radius: 30px;
 }
 
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-
 
 /* Typography */
 
@@ -39,17 +37,14 @@ h3 {
 }
 
 h1 {
-
   font-size: 7rem;
 }
 
 h2 {
-
   font-size: 4rem;
 }
 
 h3 {
-
   font-size: 3rem;
 }
 
@@ -59,27 +54,21 @@ p {
 
 /*Style for Desktop*/
 @media screen and (min-width: 1024px) {
-
   body {
     font-size: 1.8rem;
   }
 
-
   h1 {
-
     font-size: 8rem;
   }
 
   h2 {
-
     font-size: 4rem;
   }
 
   h3 {
-
     font-size: 2.4rem;
   }
-
 }
 
 /* Links */
@@ -95,7 +84,7 @@ a {
 }
 
 .link-arrow::after {
-  content: '-->';
+  content: "-->";
   margin-left: 5px;
 }
 
@@ -109,7 +98,6 @@ a {
     font-size: 1.5rem;
   }
 }
-
 
 /* Badges */
 .badge {
@@ -137,13 +125,11 @@ a {
 @media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
-
   }
 
   .badge--small {
     font-size: 1.2rem;
   }
-
 }
 
 /* Lists */
@@ -152,7 +138,6 @@ a {
   padding-left: 0;
   color: var(--color-headings);
 }
-
 
 .list--inline .list__item {
   display: inline-block;
@@ -164,19 +149,16 @@ a {
   padding-left: 3rem;
 }
 
-
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
 
 @media screen and(min-width: 1024px) {
-
   .list--tick .list__item {
     padding-left: 0;
   }
 }
-
 
 /* Icons */
 
@@ -185,8 +167,17 @@ a {
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -199,6 +190,9 @@ a {
   align-items: center;
 }
 
+.icon-container--accent {
+  background: var(--color-accent);
+}
 
 /* Buttons */
 
@@ -242,24 +236,19 @@ a {
   background: #00c8eb;
 }
 
-
-
 .btn--accent {
   background: var(--color-accent);
   color: #fff;
-
 }
 
 .btn--accent:hover {
   background: #ec3000;
-
 }
 
 .btn--block {
   width: 100%;
   display: inline-block;
 }
-
 
 .btn--outline {
   background: #fff;
@@ -277,7 +266,6 @@ a {
     font-size: 1.5rem;
   }
 }
-
 
 /* Inputs */
 .input {
@@ -309,11 +297,10 @@ a {
   margin: 4px;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
   }
-
 }
 
 /* Cards */
@@ -430,7 +417,6 @@ a {
   margin-top: 1rem;
 }
 
-
 /* Quotes */
 
 .quote {
@@ -470,7 +456,6 @@ a {
 @media screen and(min-width: 1024px) {
   .media {
     font-size: 2rem;
-
   }
 
   .quote__author {
@@ -497,5 +482,35 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
